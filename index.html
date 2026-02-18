@@ -3,14 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'; script-src 'none'; style-src 'self';">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>合同会社ELI</title>
   <meta name="description" content="iPad × AI で、時間をデザインする。合同会社ELIはメディア運営・教育・アプリ開発を手がけています。">
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
+  <a href="#main" class="skip-link">メインコンテンツへスキップ</a>
   <header class="site-header">
     <div class="site-header-inner">
-      <a href="#" class="site-logo">合同会社ELI</a>
+      <a href="/" class="site-logo">合同会社ELI</a>
       <nav class="site-nav">
         <a href="#about">About</a>
         <a href="#business">Business</a>
@@ -19,7 +22,7 @@
     </div>
   </header>
 
-  <main>
+  <main id="main">
     <section class="hero">
       <div class="hero-inner">
         <h1 class="hero-title">合同会社ELI</h1>
@@ -62,27 +65,27 @@
         <table>
           <tbody>
             <tr>
-              <th>会社名</th>
+              <th scope="row">会社名</th>
               <td>合同会社ELI</td>
             </tr>
             <tr>
-              <th>所在地</th>
+              <th scope="row">所在地</th>
               <td>【要入力】</td>
             </tr>
             <tr>
-              <th>設立</th>
+              <th scope="row">設立</th>
               <td>【要入力】</td>
             </tr>
             <tr>
-              <th>代表</th>
+              <th scope="row">代表</th>
               <td>【要入力】</td>
             </tr>
             <tr>
-              <th>事業内容</th>
+              <th scope="row">事業内容</th>
               <td>メディア運営、教育・コミュニティ事業、アプリ開発</td>
             </tr>
             <tr>
-              <th>お問い合わせ</th>
+              <th scope="row">お問い合わせ</th>
               <td>【要入力】</td>
             </tr>
           </tbody>
@@ -95,8 +98,8 @@
     <div class="site-footer-inner">
       <p class="site-footer-copy">© 2026 合同会社ELI. All rights reserved.</p>
       <div class="footer-links">
-        <a href="https://www.youtube.com/@ymk" target="_blank" rel="noopener noreferrer">YouTube</a>
-        <a href="https://x.com/ymk_net" target="_blank" rel="noopener noreferrer">X</a>
+        <a href="https://www.youtube.com/@ymk" target="_blank" rel="noopener noreferrer" aria-label="YouTube（新しいタブで開く）">YouTube</a>
+        <a href="https://x.com/ymk_net" target="_blank" rel="noopener noreferrer" aria-label="X（新しいタブで開く）">X</a>
       </div>
     </div>
   </footer>

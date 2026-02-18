@@ -89,3 +89,11 @@ eli-co-website/
 - 静的 HTML/CSS のみ（JavaScript はスムーズスクロール用の標準機能のみ）
 - レスポンシブ対応
 - GitHub Pages は Jekyll を使わず静的ファイルのまま公開
+
+### セキュリティ
+
+- **Content-Security-Policy**（meta タグ）: 同一オリジンのみ許可、スクリプト無効、iframe 埋め込み禁止
+- **Referrer-Policy**: strict-origin-when-cross-origin
+- 外部リンクは `rel="noopener noreferrer"` と `aria-label` を付与
+
+Google アナリティクス等のスクリプトを追加する場合は、`index.html` の CSP の `script-src 'none'` を変更し、許可するドメインを追加する必要があります。

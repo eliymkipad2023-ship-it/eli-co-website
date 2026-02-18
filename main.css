@@ -25,6 +25,25 @@ html {
   scroll-behavior: smooth;
 }
 
+/* スキップリンク（キーボード操作時のみ表示） */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: var(--space-m);
+  z-index: 100;
+  padding: var(--space-s) var(--space-m);
+  background: var(--color-text);
+  color: var(--color-bg);
+  font-size: 0.875rem;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: var(--space-m);
+}
+
 body {
   margin: 0;
   font-family: var(--font-sans);
@@ -61,6 +80,11 @@ body {
   letter-spacing: -0.02em;
 }
 
+.site-logo:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
 .site-nav {
   display: flex;
   gap: var(--space-l);
@@ -74,6 +98,11 @@ body {
 
 .site-nav a:hover {
   color: var(--color-accent);
+}
+
+.site-nav a:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
 }
 
 /* Hero */
@@ -231,4 +260,9 @@ section {
 
 .footer-links a:hover {
   color: var(--color-accent);
+}
+
+.footer-links a:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
 }
