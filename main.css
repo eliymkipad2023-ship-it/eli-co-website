@@ -224,6 +224,15 @@ section {
   color: var(--color-text);
 }
 
+.company td a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.company td a:hover {
+  text-decoration: underline;
+}
+
 /* Footer */
 .site-footer {
   padding: var(--space-l) var(--space-m);
